@@ -1,13 +1,18 @@
 function initMap(){
-  const el = document.getElementById('canvas');
-  const myLatLng = {lat: 33.454072, lng: 126.793135};
-  const map = new google.maps.Map(document.getElementById("map"), {
-    center: myLatLng,
-    zoom: 4,
-    mapTypeId: google.maps.MapTypeId.SATELLITE,
-  });
+  var el = document.getElementById('canvas');
+  var myLocation = new google.maps.LatLng(-33.454072, 126.793135);
+  var mapOptions = {
+  zoom: 8,
+  center: myLocation,
+  mapTypeId: google.maps.MapTypeId.SATELLITE,
+  mapTypeControlOptions: {
+			position: google.maps.ControlPosition.BOTTOM_CENTER
+		}
+  };
+  var map = new google.maps.Map(document.getElementById('map'),
+    mapOptions);
   
-  const contentString =
+  var contentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
     "</div>" +
@@ -21,12 +26,12 @@ function initMap(){
     "</div>" +
     "</div>";
     
-  const infowindow = new google.maps.InfoWindow({
+  var infowindow = new google.maps.InfoWindow({
     content: contentString,
     ariaLabel: "Jeju Island",
   });
   
-  const marker = new google.maps.Marker({
+  var marker = new google.maps.Marker({
     position: myLatLng,
     map,
     title: "Jeju Island",
