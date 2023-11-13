@@ -17,7 +17,6 @@ function init(){
     position: myLocation,
     map: myMap,
     animation: google.maps.Animation.DROP,
-    title: "Jeju Island",
   });
   
   var contentString =
