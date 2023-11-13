@@ -1,4 +1,5 @@
-function initMap(){
+function init(){
+  //alert('it works');
   var el = document.getElementById('canvas');
   var myLocation = new google.maps.LatLng(33.454072, 126.793135);
   var mapOptions = {
@@ -28,10 +29,9 @@ function initMap(){
     "<p><b>Jeju Island</b>, also referred to as <b>Jeju-do</b>, is a  the South Korean island " +
     "of Jeju in the Korea Strait. " +
     "It's known for its beach resorts and volcanic landscape of craters and cavelike lava tubes. " + 
-    "Hallasan Mountain, a dormant volcano, features hiking trails, a crater lake at the 1,950m summit and nearby Gwaneumsa Temple. " +
-    "The Geomunoreum Lava Tube System includes 7km-long Manjanggul Cave, created centuries ago when Hallasan was still active.</p>" +
-    "</div>" +
-    "</div>";
+    "Halla Mountain, a dormant volcano, features hiking trails, a crater lake at the 1,950m summit and nearby Gwaneumsa Temple. " +
+    "The Geomunoreum Lava Tube System includes 7km-long Manjanggul Cave, created centuries ago when Halla Mountain was still active.</p>" +
+    "</div>" + "</div>";
     
   var infowindow = new google.maps.InfoWindow({
     content: contentString,
@@ -42,4 +42,4 @@ function initMap(){
       });
 
 }    
-google.maps.event.addDomListener(window, 'load', initMap);
+google.maps.event.addDomListener(window, 'load', init);
