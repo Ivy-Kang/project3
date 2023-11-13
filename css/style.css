@@ -120,6 +120,14 @@ iframe {
   font-size: 1.5em;
 }  
 
+#map h1{
+  color: #F8C471;
+}
+
+#map {
+  height: 100%;
+}
+
 #wrapper{
   width: 750px;
   height: 550px;
@@ -134,7 +142,3 @@ iframe {
  background-color: gray;
  margin: 30px auto;
 }  
-
-#map{
-  margin: 0 auto;
-}
