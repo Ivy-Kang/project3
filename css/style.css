@@ -131,4 +131,10 @@ iframe {
 #canvas{
  width: 700px;
  height: 500px;
+ background-color: gray;
+ margin: 30px auto;
 }  
+
+#map{
+  margin: 0 auto;
+}
