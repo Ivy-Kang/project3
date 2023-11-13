@@ -119,3 +119,15 @@ iframe {
 #favdessert-wrapper h3{
   font-size: 1.5em;
 }  
+
+#wrapper{
+  width: 750px;
+  height: 550px;
+  background-color: #F8C471;
+  overflow: hidden;
+}
+  
+#canvas{
+ width: 700px;
+ height: 500px;
+}  
